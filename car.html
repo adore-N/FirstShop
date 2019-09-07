@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/publich.css">
+    <link rel="stylesheet" href="css/car.css">
+</head>
+<body>
+    <header></header>
+    <section id="shop_car_top">
+        <div class="margin">
+            <div class="car_top">
+                <divc class="car_top_left">
+                    <a href=""><img src="images/logo1.png" alt=""></a>
+                    <a href="">购物车</a>
+                    <span>配送至:</span>
+                    <ul>
+                        <li>上海</li>
+                        <li>嘉定</li>
+                        <li>千峰</li>
+                    </ul>
+                </div>
+                <!-- <divc class="car_top_right">
+                    <input type="text">
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <section id="shop_car">
+        <div class="margin">
+            <div class="car_empty">
+                <img src="https://img.yihaodianimg.com/cart/shopping/pc/images/offline.gif" alt="">
+                <div class="te">
+                    <p>购物车还是空的呢，快去采购吧~或者登录查看之前加入的商品</p>
+                    <input type="button" value="登录" id="login" class="login">
+                    <input type="button" value="去逛逛" class="gomore">
+                </div>
+            </div>
+            <div class="car_more">
+                <ul class="big">
+                    <li class="lie_header">    
+                        <ul>
+                            <li><input type="checkbox" id="check_all" class="check_all"><label for="checkbox">全选</label></li>
+                            <li>商品信息</li>
+                            <li>单价 (元) </li>
+                            <li>数量</li>
+                            <li>小计 (元)) </li>
+                            <li>操作</li>
+                        </ul>
+                    </li>
+                    <li class="lie">
+                        <ul>
+                            <li><input type="checkbox" id="checkbox" class="checkbox"></li>
+                            <li><img src="images/logo2.jpg" alt="">
+                            小米9 4800万超广角三摄 6GB+128GB全息幻彩蓝  骁龙855 全网通4G 双卡双待 水滴全面屏拍照智能游戏手机</li>
+                            <li>1666</li>
+                            <li><input type="number"></li>
+                            <li>3222</li>
+                            <li><input type="button" value="删除"></li>
+                        </ul>
+                    </li>
+                    <li class="lie">
+                        <ul>
+                            <li><input type="checkbox" id="checkbox"></li>
+                            <li><img src="images/logo2.jpg" alt="" style="width: 50px;">
+                            小米9 4800万超广角三摄 6GB+128GB全息幻彩蓝   <br>  骁龙855 全网通4G 双卡双待 水滴全面屏拍照智能游戏手机</li>
+                            <li>1666</li>
+                            <li><input type="number"></li>
+                            <li>3222</li>
+                            <li><input type="button" value="删除"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="payfor">
+                <div class="payfor_left">
+                    <input type="checkbox" id="check_all" class="check_all">
+                    <label for="check_all">全选</label>
+                    <input type="button" value="清空购物车" id="clearcar" class="clearcar">
+                </div>
+                <div class="payfor_right">
+                    <p>已选商品 <i> 4 </i> 件</p>
+                    <p>合计: <em>282元</em> </p>
+                    <div class="money">
+                        去结算
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section>
+        
+    </section> -->
+
+
+    <footer></footer>
+</body>
+<script src="libs/jquery.js"></script>
+<script>
+
+    // var a = document.querySelectorAll("#checkbox");
+
+    // $(".lie").find("")
+    console.log(a[0])
+    console.log(a[1])
+
+
+
+$("header").load("public.html .header_top",function(){
+        // console.log(status);
+        console.log(1)
+        // var a = document.getElementById("txt_t");
+        var a = document.getElementById("txt_t");
+        var b= document.querySelector("margin_b")
+        console.log(b)
+        // console.log(a);
+    });
+    $("#banner").load("public.html .margin_b",function(){
+        var a = document.getElementById("txt_t");
+        console.log(a);
+        console.log(1)
+    });
+
+    $("footer").load("public.html .margin_f",function(){
+        var a = document.getElementById("txt_t");
+        console.log(a);
+    });
+
+</script>
+</html>

@@ -1,0 +1,250 @@
+*{margin: 0;padding: 0;}
+
+#form{overflow: hidden;margin: 50px auto;position: relative;padding-top: 30px;}
+#now{display: block;float: left;margin-left: 235px;text-decoration: none;color: #2e82ff;font-size: 12px;}
+
+#error{
+    position: absolute;
+    left: 76px;
+    top: 12px;
+    font-size: 12px;
+    color: red;
+    display: none;
+    }
+#form p{
+    overflow: hidden;
+    margin-bottom: 20px;}
+.label{
+    display: block;
+    float: left;
+    height: 42px;
+    width: 65px;
+    margin-right: 10px;
+    line-height: 42px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 700;
+    text-align: right;
+}
+.user_name{
+    display: block;
+    position: relative;
+    float: left;
+    height: 16px;
+    width: 328px;
+    padding: 11px 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+}
+.name_error{
+    display: none;
+    float: left;
+    position: relative;
+    width: 250px;
+    top: 12px;
+    color: #fc4343;
+    height: 16px;
+    line-height: 14px;
+    padding-left: 20px;
+    font-size: 12px;
+    background: url(../images/icons.png) no-repeat -80px -23px;
+   
+}
+.name_requset{
+    display: none;
+    float: left;
+    position: relative;
+    width: 250px;
+    top: 12px;
+    height: 16px;
+    line-height: 14px;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #666;
+}
+.name_success{
+    display: none;
+    float: left;
+    position: relative;
+    width: 50px;
+    top: 12px;
+    height: 16px;
+    line-height: 14px;
+    padding-left: 20px;
+    background: url(../images/icons.png) no-repeat -80px 0;
+}
+
+.user_phone{
+    display: block;
+    position: relative;
+    float: left;
+    height: 16px;
+    width: 328px;
+    padding: 11px 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+}
+.phone_error{
+    display: none;
+    float: left;
+    position: relative;
+    width: 250px;
+    top: 12px;
+    color: #fc4343;
+    height: 16px;
+    line-height: 14px;
+    padding-left: 20px;
+    font-size: 12px;
+    background: url(../images/icons.png) no-repeat -80px -23px;
+}
+.phone_requset{
+    display: none;
+    float: left;
+    position: relative;
+    width: 250px;
+    top: 12px;
+    height: 16px;
+    line-height: 14px;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #666;
+}
+.phone_success{
+    display: none;
+    float: left;
+    position: relative;
+    width: 50px;
+    top: 12px;
+    height: 16px;
+    line-height: 14px;
+    padding-left: 20px;
+    background: url(../images/icons.png) no-repeat -80px 0;
+}
+
+.user_pwd{
+    display: block;
+    position: relative;
+    float: left;
+    height: 16px;
+    width: 328px;
+    padding: 11px 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+}
+.pwd_error{
+    display: none;
+    float: left;
+    position: relative;
+    width: 250px;
+    top: 12px;
+    color: #fc4343;
+    height: 16px;
+    line-height: 14px;
+    padding-left: 20px;
+    font-size: 12px;
+    background: url(../images/icons.png) no-repeat -80px -23px;
+}
+.pwd_requset{
+    display: none;
+    float: left;
+    position: relative;
+    width: 250px;
+    top: 12px;
+    height: 16px;
+    line-height: 14px;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #666;
+}
+.pwd_success{
+    display: none;
+    float: left;
+    position: relative;
+    width: 50px;
+    top: 12px;
+    height: 16px;
+    line-height: 14px;
+    padding-left: 20px;
+    background: url(../images/icons.png) no-repeat -80px 0;
+}
+
+.user_code{
+    display: block;
+    position: relative;
+    float: left;
+    height: 16px;
+    width: 156px;;
+    padding: 11px 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+}
+.code_btn{
+    border-radius: 0;
+    border: 1px solid #ddd;
+    height: 40px;
+    background: #f7f7f7;
+    color: #666;
+    font-weight: 400;
+    width: 162px;
+    float: left;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.user_check{
+    vertical-align: middle;
+    float: left;
+}
+.check{
+    color: #666;
+    font-size: 12px;
+    margin-left: 5px;
+    float: left;
+}
+.check_span{
+    display: none;
+    float: left;
+    position: relative;
+    width: 250px;
+    margin-left: 319px;
+    /* top: 12px; */
+    color: #fc4343;
+    height: 16px;
+    line-height: 14px;
+    padding-left: 20px;
+    font-size: 12px;
+    background: url(../images/icons.png) no-repeat -80px -23px;
+}
+
+
+.submit{
+    display: block;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    background-color: #3f89ec;
+    border: none;
+    float: left;
+    width: 350px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,109 @@
+#goods_intro{
+    height: 600px;
+    /* background: #ccc; */
+    margin-top: 20px;
+}
+.intro_left{
+    float: left;
+}
+.intro_left .img{
+    width: 360px;
+    height: 360px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.intro_left .img img{
+    width: 360px;
+}
+.intro_left .img_s{
+    width: 362px;
+    height: 60px;
+    padding: 10px 20px;
+}
+.intro_left .img_s img{
+    display: block;
+    width: 50px;
+    float: left;
+    padding: 5px 10px ;
+}
+
+.intro_right{
+    float: left;
+    width: 570px;
+    margin-left: 30px;
+}
+.intro_right h5{
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    padding-top: 10px;
+}
+.intro_right .goods_price{
+    height: 60px;
+    background: #c8000d;
+    margin-top: 10px;
+}
+.intro_right .goods_price em{
+    color: #666;
+}
+.intro_right h4{
+    height: 60px;
+    font: 12px/60px "";
+    color: #666;
+    padding-left: 10px;
+    background: #f1a0a6;
+}
+.intro_right h4 i{
+    color: #e60012;
+    font: 700 26px/60px "";
+    padding-left: 30px;
+    
+}
+.intro_right ul{
+    height: 60px;
+}
+.intro_right ul li{
+    float: left;
+    color: #333;
+    font: 12px/42px "";
+    width: 88px;
+    height: 42px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin-top: 9px;
+    margin-left: 9px;
+    padding-right: 10px;
+}
+.intro_right ul li:nth-child(1){
+    border: none;
+}
+.intro_right p{
+    height: 40px;
+    color: #666;
+    font: 12px/40px "";
+}
+.intro_right p i{
+    color: #333;
+}
+.intro_right .gobuy{
+    border-top:1px dashed #ccc;
+    border-bottom:1px dashed #ccc;
+    padding: 20px 110px;
+    margin-top: 17px;
+}
+.intro_right .gobuy .gocar{
+    width: 140px;
+    height: 54px;
+    background: #e9626d;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+}
+.intro_right .gobuy .buy{
+    width: 140px;
+    height: 54px;
+    background: #dd959b;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+}
