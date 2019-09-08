@@ -197,7 +197,7 @@
     float: left;
     width: 46px;
     border: none;
-    /* background: #ccc; */
+    background: #fff;
     height: 54px;
     border-right: 1px solid #c8c7cc;
     text-align: center;
@@ -215,3 +215,64 @@
     border-bottom: 1px solid #c8c7cc;
     height: 26px;
 }
+
+#alert{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 100000;
+    top: 0;
+    display: none;
+}
+.alert_cont{
+    position: absolute;
+    top: 185px;
+    left: 440px;
+    width: 480px;
+    height: 180px;
+    background: #fff;
+    border: 5px solid #ccc;;
+}
+.alert_cont span{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+}
+.alert_cont p{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 23px;
+    text-align: center;
+    margin-top: 50px;
+}
+.alert_cont input{
+    width: 125px;
+    height: 43px;
+    margin-top: 20px;
+}
+.alert_cont input.goon{
+    border: 1px solid #ddd;
+    background: #fcfcfc;
+    color: #666;
+    margin-left: 112px;
+}
+.alert_cont input.lookcar{
+    border: 1px solid #ff4141;
+    background: #ff5c4d;
+    color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
