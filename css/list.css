@@ -104,7 +104,7 @@
     height: 40px;
     color: #333;   
 }
-#goods_msg .goods_box a{
+#goods_msg .goods_box em{
     width: 92px;
     height: 28px;
     display: block;
