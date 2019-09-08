@@ -21,8 +21,18 @@
     left: 0;
     top: 0;
     background: rgba(200,200,200,.6);
-    display: block;
+    /* display: block; */
     z-index: 2;
+    display: none;
+}
+.intro_left .img p{
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    left: 0;
+    top: 0;
+    margin: 20px 20px;
+    z-index: 10;
 }
 .intro_left .bigimg{
     position: absolute;
@@ -32,15 +42,15 @@
     top: 0;
     border: 1px solid #ccc;
     /* display: none; */
-    position: relative;
-}
-.intro_left .bigimg{
+    /* position: relative; */
     position: absolute;
     overflow: hidden;
+    display: none;
 }
 .intro_left .bigimg img{
-    width: 450px;
-    height: 450px;
+    width: 800px;
+    height: 800px;
+    position: absolute;
 }
 .intro_left .img img{
     width: 360px;
@@ -56,7 +66,7 @@
     float: left;
     padding: 5px 0;
     margin-right: 18px;
-    border: 2px solid #999;
+    border: 2px solid #fff;
 }
 
 .intro_right{
@@ -75,9 +85,37 @@
     background: #c8000d;
     margin-top: 10px;
 }
-.intro_right .goods_price em{
-    color: #666;
+.intro_right .goods_price .timeout p{
+   float: left;
+   color: #fff;
+   font: 16px/60px "";
+   padding: 0 15px;
 }
+.intro_right .goods_price .timeout div{
+    float: left;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.intro_right .goods_price .timeout div span{
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: #333;
+    color: #fff;
+    font: 700 26px/50px "";
+    text-align: center;
+}
+.intro_right .goods_price .timeout div em{
+    float: left;
+    width: 20px;
+    height: 50px;
+    color: #fff;
+    font: 700 26px/50px "";
+    text-align: center;
+}
+    /* .intro_right .goods_price em{
+        color: #666;
+    } */
 .intro_right h4{
     height: 60px;
     font: 12px/60px "";
@@ -124,8 +162,10 @@
 .intro_right .gobuy{
     border-top:1px dashed #ccc;
     border-bottom:1px dashed #ccc;
-    padding: 20px 110px;
+    
+    padding: 20px 86px;
     margin-top: 32px;
+    overflow: hidden;
 }
 .intro_right .gobuy .gocar{
     width: 140px;
@@ -134,6 +174,8 @@
     color: #fff;
     border: none;
     font-size: 16px;
+    float: left;
+    margin:  0 20px;
 }
 .intro_right .gobuy .buy{
     width: 140px;
@@ -142,4 +184,34 @@
     color: #fff;
     border: none;
     font-size: 16px;
+    float: left;
+}
+.intro_right .gobuy .gobuy_num{
+    float: left;
+    width: 74px;
+    height: 52px;
+    border: 1px solid #c8c7cc;
+    overflow: hidden;
+}
+.intro_right .gobuy .gobuy_num input{
+    float: left;
+    width: 46px;
+    border: none;
+    /* background: #ccc; */
+    height: 54px;
+    border-right: 1px solid #c8c7cc;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+.intro_right .gobuy .gobuy_num i{
+    float: left;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    font: 24px/26px "";
+}
+.intro_right .gobuy .gobuy_num i.add{
+    border-bottom: 1px solid #c8c7cc;
+    height: 26px;
 }
