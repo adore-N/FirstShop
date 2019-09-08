@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>商品列表</title>
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/publich.css">
     <link rel="stylesheet" href="css/list.css">
     <style>
-    .header_nav_bottom_three{
-        display: none;
-    }
     .choose{
         display: none;
     }
@@ -82,75 +79,36 @@
         </div>
     </section>
     <section id="goods_msg">
-        <div class="margin clear">
-            <div class="goods_box">
+        <div class="margin clear goodsList" style="min-height: 300px;">
+            <!-- <div class="goods_box">
                 <img src="https://img12.360buyimg.com/n7/s230x230_jfs/t1/60213/24/5228/214483/5d36a571E95c99327/66447aca06daf84d.jpg!cc_230x230.jpg" alt="">
                 <span>￥1399元</span>
                 <p>荣耀9X 麒麟810 4000mAh超强续航 4800万超清夜拍 6.59英寸</p>
                 <a href="">查看详情</a>
-                <i>荣耀官方旗舰店></i>
-            </div>
-            <div class="goods_box">
-                <img src="https://img12.360buyimg.com/n7/s230x230_jfs/t1/60213/24/5228/214483/5d36a571E95c99327/66447aca06daf84d.jpg!cc_230x230.jpg" alt="">
-                <span>1399元</span>
-                <p>荣耀9X 麒麟810 4000mAh超强续航 4800万超清夜拍 6.59英寸</p>
-                <a href="">查看详情</a>
-                <i>荣耀官方旗舰店></i>
-            </div>
-            <div class="goods_box">
-                <img src="https://img12.360buyimg.com/n7/s230x230_jfs/t1/60213/24/5228/214483/5d36a571E95c99327/66447aca06daf84d.jpg!cc_230x230.jpg" alt="">
-                <span>1399元</span>
-                <p>荣耀9X 麒麟810 4000mAh超强续航 4800万超清夜拍 6.59英寸</p>
-                <a href="">查看详情</a>
-                <i>荣耀官方旗舰店></i>
-            </div>
-            <div class="goods_box">
-                <img src="https://img12.360buyimg.com/n7/s230x230_jfs/t1/60213/24/5228/214483/5d36a571E95c99327/66447aca06daf84d.jpg!cc_230x230.jpg" alt="">
-                <span>1399元</span>
-                <p>荣耀9X 麒麟810 4000mAh超强续航 4800万超清夜拍 6.59英寸</p>
-                <a href="">查看详情</a>
-                <i>荣耀官方旗舰店></i>
-            </div>
-            <div class="goods_box">
-                <img src="https://img12.360buyimg.com/n7/s230x230_jfs/t1/60213/24/5228/214483/5d36a571E95c99327/66447aca06daf84d.jpg!cc_230x230.jpg" alt="">
-                <span>1399元</span>
-                <p>荣耀9X 麒麟810 4000mAh超强续航 4800万超清夜拍 6.59英寸</p>
-                <a href="">查看详情</a>
-                <i>荣耀官方旗舰店></i>
-            </div>
-            <div class="goods_box">
-                <img src="https://img12.360buyimg.com/n7/s230x230_jfs/t1/60213/24/5228/214483/5d36a571E95c99327/66447aca06daf84d.jpg!cc_230x230.jpg" alt="">
-                <span>1399元</span>
-                <p>荣耀9X 麒麟810 4000mAh超强续航 4800万超清夜拍 6.59英寸</p>
-                <a href="">查看详情</a>
-                <i>荣耀官方旗舰店></i>
-            </div>
-            <div class="goods_box">
-                <img src="https://img12.360buyimg.com/n7/s230x230_jfs/t1/60213/24/5228/214483/5d36a571E95c99327/66447aca06daf84d.jpg!cc_230x230.jpg" alt="">
-                <span>1399元</span>
-                <p>荣耀9X 麒麟810 4000mAh超强续航 4800万超清夜拍 6.59英寸</p>
-                <a href="">查看详情</a>
-                <i>荣耀官方旗舰店></i>
-            </div>
+                <i>荣耀官方旗舰店></i>     
+            </div> -->
         </div>
     </section>
     <footer></footer>
 </body>
 <script src="libs/jquery.js"></script>
+<script src="js/public.js"></script>
+<script src="libs/cookie.js"></script>
+<script src="js/list.js"></script>
 <script>
-    $("header").load("public.html .header",function(){
-            // console.log(status);
-            console.log(1)
-            // var a = document.getElementById("txt_t");
-            var a = document.getElementById("txt_t");
-            var b= document.querySelector("margin_b")
-            console.log(b)
-            // console.log(a);
-    });
+    // $("header").load("public.html .header",function(){
+    //         // console.log(status);
+    //         console.log(1)
+    //         // var a = document.getElementById("txt_t");
+    //         var a = document.getElementById("txt_t");
+    //         var b= document.querySelector("margin_b")
+    //         console.log(b)
+    //         // console.log(a);
+    // });
 
-    $("footer").load("public.html .margin_f",function(){
-    var a = document.getElementById("txt_t");
-    console.log(a);
-    }); 
+    // $("footer").load("public.html .margin_f",function(){
+    // var a = document.getElementById("txt_t");
+    // console.log(a);
+    // }); 
 </script>
 </html>
