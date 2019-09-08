@@ -235,7 +235,9 @@
             }
         }
         new ChooseCar();
-
-
-    })
+    });
+     //页脚样式加载
+     $("footer").load("public.html .margin_f",function(){
+        // console.log(1);
+    });
 })();
