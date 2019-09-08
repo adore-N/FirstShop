@@ -96,85 +96,129 @@
     color: #666;
 }
 .car_more{
+    /* background: #fff; */
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+    display: none;
+}
+.car_more .car_top{
+    height: 40px;
     background: #fff;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
-.car_more ul.big li{
-    /* padding: 0 15px; */
+.car_more .car_top ul{
     height: 40px;
-   
+    padding: 0 25px;
 }
-.car_more ul.big li em{
-   margin-left: 920px;
-}
-.car_more ul li.lie{
-    height: 75px;
-    /* padding: 20px 0; */
-    padding: 20px 15px;
-    border-bottom: 1px solid #ccc;
-}
-.car_more ul li.lie li{height: 75px;}
-.car_more ul li.lie_header{
-    height: 40px;
-    padding: 0 15px;
-    border-bottom: 1px solid #ccc;
-    /* margin-bottom: 20px; */
+.car_more .car_top ul li{
+    float: left;
+    width: 85px;
     font: 12px/40px "";
+    color: #666;
     text-align: center;
 }
-.car_more ul li.lie_header .checkbox{
-    margin-right: 10px;
+.car_more .car_top ul li:nth-child(3){
+    margin: 0 0 0 310px;
 }
-.car_more ul li ul{
+.car_more .car_top ul li:nth-child(4){
+    /* margin: 0 50px 0 310px; */
+    width: 175px;
+}
+.car_more .car_top ul li:nth-child(6){
+    width: 193px;
+}
+.car_more .car_top ul input{
+    background: #fff;
+}
+.car_more .car_top ul label{
+    margin-left: 10px;
+}
+.car_body {
+    margin-top: 20px;
+}
+.car_body .car_goods{
+    border: 1px solid #ccc;
+    background: #fff;
+}
+.car_body .car_goods ul{
     overflow: hidden;
-    height: 75px;
-} 
-.car_more ul li ul li{
-  float: left;
-  height: 75px;
-  width: 140px;
-  color: #666;
-  text-align: center;
-} 
-.car_more ul .lie .checkbox{
-    margin: 15px ;
+    padding: 25px 25px;
 }
-.car_more ul .lie img{
+.car_body .car_goods ul li{
     float: left;
-    width: 75px;
-    height: 75px;;
+    width: 85px;
+    font: 12px/40px "";
+    color: #666;
+    text-align: center;
 }
-/* .car_more ul .lie ul li:nth-child(2){
-   
-} */
-.car_more ul li ul li:nth-child(1){
-  width: 70px;
-} 
-.car_more ul li ul li:nth-child(2){
-  width: 400px;
-  font: 12px/30px "";
-  text-align: start;
-} 
-.car_more ul .lie ul li:nth-child(3){
-    font: 12px/75px "";
-} 
-.car_more ul .lie ul li:nth-child(4) input{
-   width: 100px;
-   margin-top: 28px;
-} 
-.car_more ul .lie ul li:nth-child(5){
-    font: 12px/75px "";
-} 
-.car_more ul .lie ul li:nth-child(6){
-    font: 12px/75px "";
-} 
+.car_body .car_goods ul li:nth-child(2){
+    width: 380px;
+    text-align: start;
+}
+.car_body .car_goods ul li:nth-child(2) img{
+    float: left;
+}
+.car_body .car_goods ul li:nth-child(2) p{
+    /* float: left; */
+    font: 12px/24px "";
+    margin-left: 90px;
+    padding-top: 10px;
+}
+.car_body .car_goods ul li:nth-child(4){
+    /* margin: 0 50px 0 310px; */
+    width: 175px;
+}
+.car_body .car_goods ul li:nth-child(4) .gobuy_num{
+  overflow: hidden;
+  width: 84px;
+  height: 26px;
+  border: 1px solid #ccc;
+  margin: 10px auto;
+}
+.car_body .car_goods ul li:nth-child(4) .gobuy_num input{ 
+     float: left;
+     width: 40px;
+     height: 26px;
+     border: none;
+     border-left: 1px solid #ccc;
+     border-right: 1px solid #ccc;
+     text-align: center;
+}
+.car_body .car_goods ul li:nth-child(4) .gobuy_num i{ 
+  float: left;
+   width: 21px;
+    height: 26px;
+    font:14px/26px "";
+}
+.car_body .car_goods ul li:nth-child(3){
+    /* margin: 0 50px 0 310px; */
+    margin-left: 15px;
+}
+.car_body .car_goods ul li:nth-child(6){
+    width: 193px;
+}
+.car_body .car_goods ul li:nth-child(6) input{
+    border: none;
+    width: 25px;
+    height: 25px;
+    margin-top: 13px;
+    background: url(../images/delete.jpg) no-repeat center;
+    background-size: 27px 27px;
+    
+}
+.car_body .car_goods ul li .checkOne{
+    background: #fff;
+    margin-left: -37px;
+}
+
 
 .payfor{
     height: 60px;
     background: #fcfcfc;
     margin-top: 30px;
+    display: none;
 }
 
 .payfor_left{
@@ -192,7 +236,6 @@
     width: 120px;
     background: #fff;
 }
-
 .payfor_right{
     float: right;
     height: 60px;
