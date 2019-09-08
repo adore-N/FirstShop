@@ -76,9 +76,7 @@
             this.nameCookie = {
                 name:this.nameInfo
             }
-            setCookie("nameCookie",JSON.stringify(this.nameCookie),{
-                expires:7
-            });
+            setCookie("nameCookie",JSON.stringify(this.nameCookie));
         }
         //用户账号密码输入错误
         loginError(){
