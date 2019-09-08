@@ -28,6 +28,8 @@
                     new GoodsDetal();
                     //倒计时
                     new CountDown();
+                    //点击添加购物车
+                    new ShopCar(that.res.msg);
                 },
                 data:{
                     goodsId:this.goods_id
@@ -201,5 +203,85 @@
                 // console.log(cont);  
             },times)
         }
+    }
+
+    //点击添加到购物车效果,使用本地存储
+    class ShopCar{
+        constructor(options){
+            this.addEvent();
+            //把商品信息通过参数获取到
+            this.options = options;
+        }
+        addEvent(){
+            var that = this;
+            //点击数量,数量增加/减少
+            $(".gobuy_num").find("input").on("input",function(){
+                var reg = /^\d*$/g;
+                if(!reg.test($(this).val())){
+                    $(this).val(1)
+                }
+            })
+            $(".gobuy_num").find(".add").on("click",function(){               
+                $(".gobuy_num").find("input")[0].value = ($(".gobuy_num").find("input")[0].value) * 1 + 1;
+            })
+            $(".gobuy_num").find(".radius").on("click",function(){               
+                $(".gobuy_num").find("input")[0].value = ($(".gobuy_num").find("input")[0].value) * 1 - 1;
+                if( $(".gobuy_num").find("input")[0].value < 1){
+                    $(".gobuy_num").find("input")[0].value = 1;
+                }
+            })
+            //点击加入购物车,
+            $(".gobuy").children(".gocar").on("click",function(){
+                // console.log(1);
+                //判断用户是否登录登录就成功加入购物车,否则提醒用户登录
+                //根据存储的cookie来判断用户是否登录
+                if(getCookie("nameCookie")){
+                    $("#alert").css("display","block");
+                    //把商品信息存储下来
+                    that.setLocalStorange();
+                }else{
+                    alert("请登录")
+                }
+            }) 
+            //给弹出框绑定事件
+            //点击继续购物,错号,关闭弹出框
+            $(".alert_cont").children("span").on("click",function(){
+                $("#alert").css("display","none");
+            })
+            $(".alert_cont").children(".goon").on("click",function(){
+                $("#alert").css("display","none");
+            })
+            $(".alert_cont").children(".lookcar").on("click",function(){
+                location = "http://localhost/project_two/projectshop/car.html";
+            })          
+        }
+        //把用户点击的商品id,以及商品的数量存储到本地
+        setLocalStorange(){
+            // console.log($(".gobuy_num").find("input").val());
+            this.options[0].num = $(".gobuy_num").find("input").val();
+            // console.log(this.options);
+            this.local = JSON.parse(localStorage.getItem("goodsToCar")) || [];
+            // console.log(this.local);
+            //如果是有本地存储,就创建赋值
+            if(this.local.length < 1){
+                this.local = this.options;
+            }else{
+                var statu = true;
+                //有的话是存过的,还是新的插入,有过的,就做累加
+                for(var i = 0;i < this.local.length;i++){
+                    if(this.local[i].Id == this.options[0].Id){
+                        this.local[i].num = parseInt(this.local[i].num) +  parseInt(this.options[0].num);
+                        statu = false;
+                    }
+                }
+                //在追加到本地存储里面 
+                if(statu){
+                    this.local.push(this.options[0]);
+                }                 
+            }
+            // console.log(this.local);
+            localStorage.setItem("goodsToCar",JSON.stringify(this.local));
+        }
+
     }
 })();
