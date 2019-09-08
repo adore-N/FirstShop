@@ -142,7 +142,7 @@
                 url:"http://localhost/project_two/projectshop/data/goodstime.php",
                 success:function(res){
                     that.res = JSON.parse(res).msg;
-                    console.log(that.res);
+                    // console.log(that.res);
                     //数据请求成功
                     that.display();
                 },
@@ -215,10 +215,42 @@
     }
     new CountDown();
 
+    //页面楼层效果
+    class Floor{
+        constructor(){
+            this.init();
+        }
+        init(){
+            //绑定事件按到对应内容显示对应楼层
+            this.addEvent();
+        }
+        //事件绑定
+        addEvent(){
+            //点击楼层按钮,获取当前按钮下标
+            var that = this;
+            $("#floor_index").children("span").on("click",function(){
+                that.index = $(this).index();
+                // console.log(that.index);
+                // 回到顶部的效果,回到顶部直接回到
+                if(that.index == 5){
+                    $("html").animate({
+                        scrollTop:0
+                    },1000)
+                }else{
+                    that.display();
+                }
+            })
+        }
+        //楼层动画效果
+        display(){
+            // console.log($(".floor").eq(this.index))
+            var t = $(".floor").eq(this.index)[0].offsetTop;
+            // console.log(t);
+            $("html").animate({
+                scrollTop:t
+            },500)
+        }
 
-
-    //页脚样式加载
-    $("footer").load("public.html .margin_f",function(){
-        // console.log(1);
-    });
+    }
+    new Floor();
 })();
