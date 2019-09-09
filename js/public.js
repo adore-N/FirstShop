@@ -6,6 +6,7 @@
             constructor(){
                 //判断用户是否登录
                 this.isLogin();
+                this.goOut();
             }
             //查询本地cookie,来判断用户是否登录
             isLogin(){
@@ -17,6 +18,13 @@
                     $(".header_top_right").find("li").children("span").html("欢迎"+ user_name.name+"先生登录")
                     .siblings().remove();
                 }
+            }
+            //退出功能
+            goOut(){
+                $(".header_top_right").find("li").eq(1).on("click",function(){
+                    // console.log(1)
+                    removeCookie("nameCookie");
+                })
             }
         }
         new Login();
@@ -220,7 +228,7 @@
             //移入显示,移出消失
             addEvent(){
                 $(".list_t").children("li").on("mouseover",function(){
-                    console.log($(this).index());
+                    // console.log($(this).index());
                     $(".choose").css("display","none").eq($(this).index()).css("display","block");
                 })
                 $(".choose").on("mouseleave",function(){
