@@ -9,11 +9,22 @@
    echo $link->connect_error;
 
    $sql = "INSERT userinfo(user_name,user_phone,user_pwd) VALUES ('$user_name','$user_phone','$user_pwd')";
-   $q = $link->query($sql);
+   $sql1 = "SELECT * FROM userinfo WHERE user_phone='".$user_phone."'";
 
-   if($q){
+   $qq = $link->query($sql1);
+   
+
+//    if($q){
+//         echo '{"code":1,"msg":"注册成功"}';
+//    }else{
+//        echo '{"code":0,"msg":"注册失败"}';
+//    }
+
+   if($qq->num_rows > 0){
+       echo '{"code":0,"msg":"登录失败"}';
+    }else{
+        $q = $link->query($sql);
         echo '{"code":1,"msg":"注册成功"}';
-   }else{
-       echo '{"code":0,"msg":"注册失败"}';
-   }
+    }
+
 ?>
