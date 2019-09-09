@@ -89,7 +89,7 @@
                 if(that.user_check.checked && registerStatus == 3){
                     // open("http://baidu.com");
                     //把用户注册信息发送到数据库
-                    console.log(that.user_name.value);
+                    // console.log(that.user_name.value);
                     ajax({
                         type:"post",
                         url: "http://localhost/project_two/projectshop/data/register.php",
