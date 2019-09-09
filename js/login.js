@@ -44,8 +44,8 @@
                     // console.log(res);
                     console.log(JSON.parse(res));
                     that.res = JSON.parse(res);
-                    that.nameInfo = that.res.user_name.user_name;
                     if(that.res.code == 1){
+                        that.nameInfo = that.res.user_name.user_name;
                         //当用户输入正确的,跳转页面,同时把用户名存起来
                         // console.log(1)
                         that.userName();
@@ -54,14 +54,7 @@
                         //用户账号密码输入错误
                         that.loginError();
                     }
-                }
-                // timeout:3000,
-                // error:function(res){
-                //     //请求超时
-                //     // console.log(res)
-                    
-                // }
-                
+                }             
             })
         }
         //用户账号密码输入正确
