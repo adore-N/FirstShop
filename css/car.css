@@ -45,6 +45,7 @@
     background: #f8f8f8;
     min-height: 400px;
     padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .car_empty{
@@ -141,6 +142,7 @@
 .car_body .car_goods{
     border: 1px solid #ccc;
     background: #fff;
+    margin-bottom: 20px;
 }
 .car_body .car_goods ul{
     overflow: hidden;
@@ -219,14 +221,16 @@
     background: #fcfcfc;
     margin-top: 30px;
     display: none;
+    margin-bottom: 20px;
 }
 
 .payfor_left{
     float: left;
     padding: 22px 0;
     font: 12px/16px "";
+    padding-left: 13px;
 }
-.payfor_left .check_all{
+.payfor_left .checkAll{
     margin-left: 30px;
     margin-right: 20px;
 }
