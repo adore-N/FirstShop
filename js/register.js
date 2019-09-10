@@ -96,11 +96,16 @@
                         success:function(res){
                             console.log(res);
                             // 数据存储成功之后,根据后端会数据进行
-                            that.openLoad();
+                            that.res = JSON.parse(res)
+                            if(that.res.code == 1){
+                                that.openLoad();
+                            }else{
+                                alert("用户名已存在");
+                            }
                         },
-                        error:function(res){
-                            console.log(res);
-                        },
+                        // error:function(res){
+                        //     console.log(res);
+                        // },
                         data:{
                             userName:that.user_name.value,
                             userPhone:that.user_phone.value,
