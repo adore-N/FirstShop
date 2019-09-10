@@ -39,7 +39,7 @@
             var str = "";
             for(var i = 0;i < this.res.msg.length;i++){
                 str += `<div class="goods_box" id=${this.res.msg[i].Id}>
-                            <img src="goodsimg/${this.res.msg[i].goods_img}" alt="">
+                            <img abc_src="goodsimg/${this.res.msg[i].goods_img}" alt="" class="lazy_img">
                             <span>￥${this.res.msg[i].goods_price}元</span>
                             <p>${this.res.msg[i].goods_name}</p>
                             <em>查看详情</em>
@@ -47,6 +47,29 @@
                         </div>`;
             }
             $(".goodsList").html(str);
+            //数据成功,执行懒加载
+            this.displayLazy();
+        }
+        //懒加载
+        displayLazy(){
+            //页面可视区域的高度
+            var clientH = document.documentElement.clientHeight;
+            // console.log($(".lazy_img"));
+            //初始页面时:在页面可视区域内的图片需要显示
+            for(var i = 0;i < 5;i++){
+                $(".lazy_img").eq(i).attr("src",$(".lazy_img").eq(i).attr("abc_src"));
+            }
+            //当用户开始滚动的时候,开始加载图片
+            $(document).on("scroll", function(){
+                var scrTop = document.documentElement.scrollTop;
+                // console.log($(".lazy_img")[1].offsetTop)//原生的写法
+                // console.log($(".lazy_img").eq(1).offset().top)//jq的写法
+                for(var i = 5;i < $(".lazy_img").length;i++){
+                    if(scrTop > $(".lazy_img").eq(i).offset().top - clientH){
+                        $(".lazy_img").eq(i).attr("src",$(".lazy_img").eq(i).attr("abc_src"));
+                    }
+                }
+            })
         }
         //没有查询到数据,显示没有找到该商品
         displayEmpty(){
