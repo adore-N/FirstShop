@@ -99,7 +99,7 @@
 .txt_search ul{
     width: 460px;
     position: absolute;
-    z-index: 10;
+    z-index: 40;
     left: 10px;
     top: 40px;
     background: #fff;
@@ -330,5 +330,76 @@
     margin-right: 30px;
 }
 
+.header_f {
+    background: #fff;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999999999999;
+    display: none;
+}
+.header_f .header-fixed{
+    /* padding: 10px; */
+    /* overflow: hidden; */
+    height: 80px;
+}
+.header_f .header-fixed .fixed{
+    float: left;
+    width: 150px;
+    height: 60px;
+}
+.header_f .header-fixed img{
+    float: left;
+    width: 150px;
+    height: 60px;
+}
+.header_f .header-fixed .txt_search_f{
+    float: left;
+    width: 510px;
+    height: 38px;
+    border: 1px solid #ff4400;
+    border-radius: 19px;
+    /* overflow: hidden; */
+    background: #fff;
+    position: relative;
+    margin: 10px 0 0 60px;
+}
+.header_f .header-fixed .txt_search_f .txt_f{
+    float: left;
+    border: none;
+    height: 38px;
+    width: 460px;
+    color: #333;
+    background: none;
+    text-indent: 20px;
+}
+
+.header_f .header-fixed .txt_search_f .txt_b{
+    float: left;
+    height: 38px;
+    width: 50px;
+    border: none;
+    border-left:2px solid #ff4400;
+    background: url(../images/search1.png) no-repeat center;
+    background-size: 20px;
+}
+.header_f .header-fixed .car_f{
+    margin-top: 10px;
+    float: right;
+    width: 120px;
+    height: 38px;
+    border: 1px solid #ccc;
+    border-radius: 19px;
+} 
+.header_f .header-fixed .car_f a{
+    display: block;
+    height: 20px;
+    font: 16px/20px "";
+    color: #333;
+    padding: 9px 0;
+    text-align: center;
+}
 
 

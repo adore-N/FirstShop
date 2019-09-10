@@ -39,7 +39,7 @@ header{
     border: none;
     position: absolute;
     top: 180px;
-    z-index: 9999999999999;
+    z-index: 999999;
 }
 #banner #left{
     left: 0;
@@ -53,7 +53,7 @@ header{
     height: 40px;
     left: 320px;
     /* background: red; */
-    z-index:999999999999;
+    z-index:999999;
 }
 #banner .imgindex ul{
     overflow: hidden;
@@ -293,6 +293,8 @@ header{
 footer{
     height: 288px;
 }
+
+
 
 
 
