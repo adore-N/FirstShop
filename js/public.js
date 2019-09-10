@@ -15,7 +15,7 @@
                 if(getCookie("nameCookie")){
                     var user_name = JSON.parse(getCookie("nameCookie"));
                     // console.log(user_name);
-                    $(".header_top_right").find("li").children("span").html("欢迎"+ user_name.name+"先生登录")
+                    $(".header_top_right").find("li").children("span").html("欢迎"+ user_name.name+"先生进入本网站")
                     .siblings().remove();
                 }
             }
@@ -243,6 +243,37 @@
             }
         }
         new ChooseCar();
+
+        //固定定位定位的顶部搜素框
+        class Fixed{
+            constructor(){
+                this.display();
+            }
+            display(){
+                var that = this;
+                $(document).on("scroll", function(){
+                    // 原生获取高度
+                    var a = document.documentElement.scrollTop;
+                    if($(document).scrollTop() > 800){
+                        $(".header_f").stop().show();
+                        $(".txt_b").on("click",that.onClick.bind(that));
+                    }else{
+                        $(".header_f").stop().hide();
+                    }
+                    console.log(a);
+                })
+            }
+             //点击搜索
+             onClick(){
+                //把搜索内容绑定到url上面,后面再商品列表的时候获取到,渲染页面
+                console.log(1)
+                this.searchValue = $("#txt_f").val();
+                // $("#txt_t").val(this.searchValue);
+                console.log(this.searchValue);
+                location.href = "http://localhost/project_two/projectshop/list.html?searchValue=" + this.searchValue;
+            }
+        }
+        new Fixed();
     });
      //页脚样式加载
      $("footer").load("public.html .margin_f",function(){
