@@ -21,7 +21,7 @@
 //    }
 
    if($qq->num_rows > 0){
-       echo '{"code":0,"msg":"登录失败"}';
+       echo '{"code":0,"msg":"注册失败"}';
     }else{
         $q = $link->query($sql);
         echo '{"code":1,"msg":"注册成功"}';
