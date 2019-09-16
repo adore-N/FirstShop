@@ -135,6 +135,7 @@
                 }
                 // console.log(localGoods);
                 localStorage.setItem("goodsToCar",JSON.stringify(localGoods));
+                that.howMoney();
             })
         }
         // 封住方法(选中的商品计算价格)
